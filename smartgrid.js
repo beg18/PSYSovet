@@ -6,7 +6,7 @@ smartgrid('src/css/libs', {
     columns: 12,
     offset: "30px",
     container: {
-        maxWidth: "1130px"
+        maxWidth: "1190px"
     },
     breakPoints: {
         md: {
