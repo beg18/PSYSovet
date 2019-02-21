@@ -1,0 +1,96 @@
+/*http://chimir.ru/post/39:
+@font-face mixin.Пример использования:
+@family: имя шрифта (обязательно).
+@filename: название шрифта, так же используется в качестве id для шрифта в формате svg
+(обязательно, по умолчанию используется имя шрифта).
+@weight: жирность шрифта (не обязательно, по умолчанию normal).
+@style: стиль шрифта (не обязательно, по умолчанию normal).
+
+.font-face(Roboto Slab, RobotoSlab-Bold, bold);                           
+
+*/    
+
+.font-face(@family, @filename: @family, @weight: normal, @style: normal){
+    @font-face{
+        font-family: @family;
+        src:url('fonts/@{filename}.eot');
+        src:url('fonts/@{filename}.eot?#iefix') format('embedded-opentype'),
+                url('fonts/@{filename}.woff') format('woff'),
+                url('fonts/@{filename}.ttf') format('truetype'),
+                url('fonts/@{filename}.svg#@{filename}') format('svg');
+        font-weight: @weight;
+        font-style: @style;
+    }
+}
+
+.font-face(@family, @filename: @family, @weight: normal, @style: normal){
+    @font-face{
+        font-family: @family;
+        src:url('../fonts/@{filename}.eot');
+        src:url('../fonts/@{filename}.eot?#iefix') format('embedded-opentype'),
+                url('../fonts/@{filename}.woff') format('woff'),
+                url('../fonts/@{filename}.ttf') format('truetype'),
+                url('../fonts/@{filename}.svg#@{filename}') format('svg');
+        font-weight: @weight;
+        font-style: @style;
+    }
+}
+.font-face("Balkaracondensed-400-normal" , Balkaracondensed-400-normal);
+
+.font-face("Montserrat" , Montserrat-Black);
+.font-face("Montserrat" , Montserrat-BlackItalic);
+.font-face("Montserrat" , Montserrat-Bold);
+.font-face("Montserrat" , Montserrat-BoldItalic);
+.font-face("Montserrat" , Montserrat-ExtraBold);
+.font-face("Montserrat" , Montserrat-ExtraBoldItalic);
+.font-face("Montserrat" , Montserrat-ExtraLight);
+.font-face("Montserrat" , Montserrat-ExtraLightItalic);
+.font-face("Montserrat" , Montserrat-Italic);
+.font-face("Montserrat" , Montserrat-Light);
+.font-face("Montserrat" , Montserrat-LightItalic);
+.font-face("Montserrat" , Montserrat-Medium);
+.font-face("Montserrat" , Montserrat-MediumItalic);
+.font-face("Montserrat" , Montserrat-Regular);
+.font-face("Montserrat" , Montserrat-SemiBold);
+.font-face("Montserrat" , Montserrat-SemiBoldItalic);
+.font-face("Montserrat" , Montserrat-Thin);
+.font-face("Montserrat" , Montserrat-ThinItalic);
+
+.font-face("BebasBold" , BebasBold);
+.font-face("BebasBook" , BebasBook);
+.font-face("BebasLight" , BebasLight);
+.font-face("BebasRegular" , BebasRegular);
+.font-face("BebasThin" , BebasThin);
+
+.font-face("BenderBlack" , BenderBlack);
+.font-face("BenderBlackItalic" , BenderBlackItalic);
+.font-face("BenderBold" , BenderBold);
+.font-face("BenderBoldItalic" , BenderBoldItalic);
+.font-face("BenderItalic" , BenderItalic);
+.font-face("BenderLight" , BenderLight);
+.font-face("BenderLightItalic" , BenderLightItalic);
+.font-face("BenderRegular" , BenderRegular);
+
+
+.font-face("PFCentroSlabProBold" ,PFCentroSlabProBold);
+.font-face("PFCentroSlabProMedium" ,PFCentroSlabProMedium);
+
+
+.font-face("RalewayBold" ,RalewayBold);
+.font-face("RalewayRegular" , RalewayRegular);
+.font-face("RalewaySemiBold" , RalewaySemiBold);
+
+.font-face("RobotoBold", RobotoBold);
+.font-face("RobotoLight", RobotoLight);
+.font-face("RobotoMedium", RobotoMedium);
+.font-face("RobotoRegular", RobotoRegular);
+
+.font-face("RobotoCondensedBold", RobotoCondensedBold);
+.font-face("RobotoCondensedLight", RobotoCondensedLight);
+.font-face("RobotoCondensedRegular", RobotoCondensedRegular);
+
+
+
+
+
+

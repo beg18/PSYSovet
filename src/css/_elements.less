@@ -1,0 +1,226 @@
+// out: null
+
+
+
+/*===========================
+Table of Content
+
+1. Wrappers
+2. Buttons
+3. Form elements
+4. Font family
+5. Typography
+===========================*/
+
+
+
+/* 1. Wrappers
+===========================*/
+/*
+.debug {
+    .debug(rgba(0, 0, 0, 0.5), 1px solid #ff0);
+}
+*/
+.wrapper {
+    .wrapper();
+}
+.outer {
+    .min-max(per, 300, 100, 0);
+}
+
+.inner {
+    .min-max(300, 1415, 15);
+}
+/* 2. Buttons
+===========================*/
+.but {
+    .button(40, 30, @Green73, white,{
+    .ff-open-sans();
+    .rem-size(16);
+    });
+
+    .xs-block({
+        .button(40, 15, @Green73, white,{
+            .rem-size(14);
+        });
+    });
+}
+
+/* 3. Form elements
+===========================*/
+*::-webkit-input-placeholder {
+    color: #666;
+    opacity: 1;
+}
+*:-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+*::-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+*:-ms-input-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+
+}
+body input:required:valid,
+body textarea:required:valid {
+
+}
+
+/*4. Font family
+===========================*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+@import "http://fonts.fontstorage.com/import/raleway.css";
+/*
+	Raleway, 100, 100 italic, 200, 200 italic,
+	300, 300 italic, 400, 400 italic, 500, 500 italic,
+	600, 600 italic, 700, 700 italic, 800, 800 italic, 900, 900 italic
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i&subset=cyrillic');
+
+.ff-open-sans(@font-weight:400; @font-style: normal;){
+    font-family: 'Open Sans', @ff-s-serifArial;
+    font-weight: @font-weight;
+    font-style: @font-style;
+}
+
+.ff-montserrat(@font-weight:400; @font-style: normal;){
+   font-family: 'Montserrat', @ff-s-serifArial;
+   font-weight: @font-weight;
+   font-style: @font-style;
+}
+.ff-raleway(@font-weight:400; @font-style: normal;){
+    font-family: Raleway, @ff-s-serifArial;
+    font-weight: @font-weight;
+    font-style: @font-style;
+}
+
+/*5. Typography
+===========================*/
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: @ff-s-serifArial;
+    color: @base_color;
+    overflow-x: hidden;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    &:focus {
+        outline: none;
+    }
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before,
+*, *:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    .min-width(300);
+    .display-container();
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    flex: 0 0 auto;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+
+html {
+    box-sizing: border-box;
+
+    .html-fz(16);
+
+    .sm-block({
+        .html-fz(15);
+    });
+
+    .xs-block({
+        .html-fz(14);
+    });
+
+    .xxs-block({
+        .html-fz(13);
+    });
+}
+
+.h1-fontSize() { .rem-size(36); }
+.h2-fontSize() { .rem-size(28); }
+.h3-fontSize() { .rem-size(24); }
+.h4-fontSize() { .rem-size(21); }
+.h5-fontSize() { .rem-size(18); }
+.h6-fontSize() { .rem-size(16); }
+
+
+h1 {
+    .h1-fontSize;
+}
+
+
+h2 {
+    .h2-fontSize;
+}
+
+h3 {
+    .h3-fontSize;
+}
+
+h4 {
+    .h4-fontSize;
+}
+
+h5 {
+    .h5-fontSize;
+}
+
+h6 {
+    .h6-fontSize;
+}
+
+.gradient-my(){
+    background: linear-gradient(0deg, #e9edf3 0%, #d4d8df 100%);
+}
+
+
+
+
+
+
+
