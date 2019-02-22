@@ -8,6 +8,14 @@ $(document).ready(function() {
       $('.box-tab-cont[data-tab=' + $(this).attr('data-tab') + ']')
           .toggleClass('content-active');
    });
+
+   var tab = $('.consultations-item__link');
+   tab.on('click',function (e) {
+      e.preventDefault();
+      $('.content').removeClass('content-active');
+      $('.content[data-tab=' + $(this).attr('data-tab') + ']')
+          .toggleClass('content-active');
+   });
 });
 $(window).load(function () {
    $('#js_thanks .thanks__inner').animated('fadeInLeft','fadeInLeft');
