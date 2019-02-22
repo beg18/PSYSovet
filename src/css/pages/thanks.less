@@ -4,6 +4,9 @@
 }
 .section__head {
   margin-bottom: 35px;
+  .margin-Y(bottom-md, 20);
+  .margin-Y(bottom-sm, 10);
+  .margin-Y(bottom-xs, 0);
 }
 .section__title {
   .ff-open-sans();
@@ -32,17 +35,16 @@
   .beam-xs(11);
   .beam-xxs(12);
   .margin-Y(sm, 30);
-  //.min-height(252);
   .display-container();
 
   &::after {
     content: "";
     display: block;
     width: 1px;
-    .height(252);
+    .height(350);
     background-color: @WhiteE1;
     position: absolute;
-    top: 45%;
+    top: 55%;
     right: -90px;
     transform: translateY(-50%);
   }

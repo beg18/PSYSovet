@@ -10,7 +10,8 @@ $(document).ready(function() {
    });
 });
 $(window).load(function () {
-
+   $('#js_thanks .thanks__inner').animated('fadeInLeft','fadeInLeft');
+   $('#js_thanks .thanks__inner--last').animated('fadeInRight','fadeInRight');
 });
 
 

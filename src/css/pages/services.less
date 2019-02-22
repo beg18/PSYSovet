@@ -1,0 +1,115 @@
+.psychology-services {
+  .padding-Y(40);
+  .white();
+}
+.psychology-services__wrap {
+  .row-flex();
+  .valign-sm-center-col();
+}
+.psychology-services__left {
+  .col();
+  .beam(9);
+  .beam-md(9);
+  .beam-sm(10);
+  .beam-xs(11);
+  .beam-xxs(12);
+}
+.services__title {
+  margin-bottom: 30px;
+
+  .sm-block({
+  .center-align();
+  });
+}
+.services-wrap {
+  .row-flex();
+  .valign-sm-center-col();
+}
+.services-list {
+  .margin-Y(sm, 30);
+  .col();
+  .beam(6);
+  .beam-md(6);
+  .beam-sm(8);
+  .beam-xs(8);
+  .beam-xxs(10);
+
+}
+.services-item {
+  .specialist-elem {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 30px;
+  }
+  .specialist-name {
+    .ff-open-sans(600);
+    .rem-size(16);
+    .line-height-rem(20);
+  }
+  .specialist-occ {
+    .ff-open-sans(600);
+    .rem-size(14);
+    .line-height-rem(24);
+    color: @Gray5e;
+  }
+
+
+}
+.specialist-photo {
+
+}
+.sevices-pic {
+
+
+}
+.services-total {
+  .ff-open-sans();
+  .rem-size(16);
+  .line-height-rem(20);
+  .margin-Y(10);
+  color: @Gray5e;
+}
+.psychology-services__right {
+  .margin-Y(sm, 30);
+  .col();
+  .beam(3);
+  .beam-md(3);
+  .beam-sm(10);
+  .beam-xs(11);
+  .beam-xxs(12);
+}
+.services__right-item {
+  margin-bottom: 25px;
+
+  p {
+    .rem-size-mb(14);
+    .line-height-rem(24);
+    color: @GrayA;
+    padding-left: 10px;
+  }
+
+}
+.services__right-head {
+  .ff-open-sans();
+  .rem-size(16);
+  margin-bottom: 10px;
+}
+.services__link {
+  text-decoration: none;
+  color: @Blue214;
+  .transition(.5);
+  .display-container();
+  padding-left: 10px;
+
+  &::before {
+    content: "";
+    display: block;
+    .circle-img-wrap(5);
+    background-color: @Blue214;
+    .display-left();
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
