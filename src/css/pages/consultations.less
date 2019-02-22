@@ -2,26 +2,24 @@
   .padding-Y(40);
   .white();
 }
+
 .section__header {
   .margin-Y(30);
 }
+
 .section__title {
   .ff-open-sans();
   .rem-size(28);
   .line-height-rem(30);
   color: #000000;
 }
-.consultations__wrap {
 
-}
-.contents__consultations {
-
-}
 .consultations-item {
   .min-max(per, 300, 100, 30);
   .margin-Y(30);
   .center-align();
 }
+
 .consultations-item__tab {
   .dib-mid();
   margin: 0 7px;
@@ -37,6 +35,7 @@
     &:extend(.consultations-item__tab--active);
   }
 }
+
 .consultations-item__link {
   .button(40, 5, white, @Gray76, {
     .ff-open-sans(600);
@@ -49,18 +48,8 @@
     text-decoration: none;
     color: @Blue214;
   }
-
-
 }
-.contents {
 
-}
-.content {
-
-}
-.content-active {
-
-}
 
 .table-content {
   .table();
@@ -143,22 +132,28 @@
   &:extend(.table-content all);
   .margin-Y(60);
 }
+
 .table-free__row {
   &:extend(.table-content__row all);
 }
+
 .table__cel1 {
   &:extend(.table-cell__1 all);
 }
+
 .table__cel2 {
   &:extend(.table-cell__2 all);
   .center-align();
 }
+
 .table__cel3 {
   &:extend(.table-cell__3 all);
 }
+
 .table__cel4 {
   &:extend(.table-cell__4 all);
 }
+
 .table__cel5 {
   &:extend(.table-cell__5 all);
 }
@@ -176,12 +171,13 @@
   .line-height-rem(20);
   text-decoration: underline;
   color: @Blue214;
-  .transition(.5);
+
 
   &:hover {
     text-decoration: none;
   }
 }
+
 .content {
   overflow-y: hidden;
   height: 0;
