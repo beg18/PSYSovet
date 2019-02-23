@@ -46,8 +46,6 @@ $(window).load(function () {
     $('#js_thanks .thanks__inner--last').animated('fadeInRight', 'fadeInRight');
     $('#js_psychology-services .psychology-services__left').animated('zoomIn', 'fadeInLeft');
     $('#js_psychology-services .psychology-services__right').animated('zoomIn', 'fadeInRight');
-    $('#js_questions, #js_theme .js_left').animated('fadeInLeft', 'fadeOut');
-    $('#js_questions, #js_theme .js_right').animated('fadeInRight', 'fadeOut');
     $('#js_consultations,#js_theme .js_up').animated('fadeInUp', 'fadeInDown');
     $('#js_consultations,#js_theme .js_down').animated('fadeInDown', 'fadeInUp');
 
