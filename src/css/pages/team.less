@@ -1,0 +1,134 @@
+.team {
+  background-color: #e7eef6;
+  .padding-Y(40);
+}
+
+.section__header {
+  .margin-Y(10);
+}
+
+.section__title {
+  .ff-open-sans();
+  .rem-size(28);
+  .line-height-rem(30);
+  color: #000000;
+  .margin-Y(bottom, 25);
+
+  a {
+    text-decoration: none;
+    color: @Blue708;
+    transition: text-decoration .5s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.section__descr {
+  .ff-open-sans(400, italic);
+  .rem-size(16);
+  .line-height-rem(26);
+  color: @Gray5e;
+}
+
+.team__wrap {
+  .row-flex();
+  .justify-bet();
+  .margin-Y(1);
+}
+
+.team__inner {
+  .margin-Y(20);
+  .col();
+  .beam(1.7);
+}
+.team-card {
+  padding: 15px 13px;
+  .white();
+  .valign-center-col();
+}
+.team-card__avatar {
+  .margin-Y(bottom, 10);
+}
+
+.team-card__img {
+
+}
+.team-card__header {
+  .margin-Y(bottom, 30);
+  .padding-X(left, 8);
+}
+.team-card__title {
+  .margin-Y(bottom, 10);
+  transition: all .5s;
+
+  a {
+    display: block;
+    text-decoration: underline;
+    .ff-open-sans(600);
+    .rem-size(16);
+    .line-height-rem(20);
+    color: #EC319C;
+    .display-container();
+
+    &:hover {
+      text-decoration: none;
+    }
+
+  }
+
+  &:hover {
+    & a::after {
+      content: "";
+      .dib-mid();
+      .circle-img-wrap(5);
+      background-color: @Green4c;
+      position: absolute;
+      top: 25%;
+      left: -10px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.team-card__subtitle {
+  .ff-open-sans();
+  .rem-size(14);
+  .line-height-rem(18);
+  color: @Gray5e;
+}
+
+.team-card__footer {
+  .margin-Y(top, 10);
+
+  a {
+    text-decoration: none;
+    .ff-open-sans(600);
+    .rem-size(14);
+    .line-height-rem(24);
+    color: @Blue214;
+    transition: all .5s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .experience__stars {
+    margin-bottom: 5px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid @WhiteE1;
+  }
+  .stars-item {
+    width: 15px;
+    height: 15px;
+    background: url(../i/icons/icons-star.png) center no-repeat;
+    transition: all .5s;
+
+    &:hover {
+      cursor: pointer;
+      background: url(../i/icons/icons-star-h.png) center no-repeat;
+    }
+  }
+}
