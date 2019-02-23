@@ -20,11 +20,13 @@
   .margin-Y(32);
   .col();
   .col-float();
-  .beam(4);
 }
+
 .comment-item {
   padding: 10px 40px;
   .display-container();
+
+  .padding-X(md, 60);
 
   &::after {
     content: "";
@@ -38,6 +40,12 @@
   &--last::after {
     display: none;
   }
+  .md-block({
+
+  &::after {
+    display: none;
+  }
+  });
 }
 .comment-item__text {
   .ff-open-sans(400, italic);

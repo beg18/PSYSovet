@@ -6,7 +6,6 @@
 //= ../../bower_components/jquery-mousewheel/jquery.mousewheel.min.js
 //= ../../bower_components/fancybox/jquery.fancybox.pack.js
 //= ../../bower_components/scrollto/jquery.scrollTo.min.js
-//= ../../bower_components/owl-carousel/owl.carousel.js
 //= ../../bower_components/countdown/jquery.plugin.js
 //= ../../bower_components/countdown/jquery.countdown.min.js
 //= ../../bower_components/countdown/jquery.countdown-ru.js
@@ -15,6 +14,7 @@
 //= ../../bower_components/equalHeight/jquery.equalheights.min.js
 //= ../../bower_components/waypoints/waypoints.min.js
 //= ../../bower_components/animate/animate-css.js
+//= ../../bower_components/owl-carousel/owl.carousel.js
 
 /* Custom
 ===========================*/

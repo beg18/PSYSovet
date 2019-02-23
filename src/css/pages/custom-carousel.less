@@ -1,0 +1,64 @@
+//ARROWS
+
+  .owl-carousel {
+    .owl-nav {
+      &.disabled {
+        display: block;
+
+        .sm-block({
+          display: none;
+        });
+      }
+
+      button.owl-next,
+      button.owl-prev {
+        border: none;
+        box-shadow: none;
+        width: 12px;
+        height: 85px;
+      }
+
+      button.owl-next {
+        background: url(../i/next-arrow.png) no-repeat right center;
+        position: absolute;
+        right: 0;
+        top: 50px;
+
+        .md-block({
+          right: 30px;
+        });
+      }
+
+      button.owl-prev {
+        background: url(../i/prev-arrow.png) no-repeat left center;
+        position: absolute;
+        left: 0;
+        top: 50px;
+
+        .md-block({
+          left: 30px;
+        });
+
+      }
+
+  }
+
+    .owl-dots {
+      .center-align();
+      padding: 0 0 15px 0;
+
+      .owl-dot {
+        .circle-img-wrap(10);
+        border: none;
+        box-shadow: none;
+        .dib-mid();
+        .grey();
+        margin: 0 3px;
+        cursor: pointer;
+      }
+
+      .active {
+        .bgc(dark, #4caf50);
+      }
+    }
+}
