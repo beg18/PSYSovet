@@ -1,0 +1,140 @@
+.footer {
+  .padding-Y(40);
+  background-color: @Blue708;
+  color: #ffffff;
+
+  nav {
+    border-bottom: none;
+    min-height: 60px;
+    background-color: @Blue708;
+
+    .nav-header, .wrap-core-nav-list {
+      background-color: @Blue708 !important;
+
+      .md-block({
+        background-color: @Blue708 !important;
+      });
+    }
+  }
+
+  .core-nav .wrap-core-nav-list .core-nav-list li {
+    position: relative;
+
+    .fa-rss:before {
+      content: "\f09e";
+      position: absolute;
+      right: -12px;
+      top: 23px;
+      width: 16px;
+      height: 14px;
+      background-color: #ff8c00;
+    }
+  }
+
+  nav .menu li a {
+    display: block;
+    padding: 20px 10px;
+    text-decoration: none;
+    color: #ffffff;
+    .ff-open-sans(600);
+    .rem-size(14);
+    text-transform: uppercase;
+  }
+  .attributes__lihk {
+    padding: 20px 5px;
+    .center-align();
+
+      .fa {
+        text-decoration: none;
+        width: 26px;
+        height: 26px;
+        color: white;
+        .rem-size(16);
+        .dib-mid();
+        transition: all .5s;
+
+        &:hover {
+          border-radius: 50%;
+          background: white;
+          padding-top: 6px;
+          color: @Blue708;
+        }
+      }
+}
+
+
+
+  nav .menu li a:hover {
+    color: #e74c3c;
+  }
+
+
+  /*
+  DROPDOWN STYLE
+  =========================== */
+  nav li.megamenu.open > a,
+  nav li.dropdown.open > a{
+    color: #e74c3c;
+  }
+  ul.dropdown-menu li a{
+    text-decoration: none;
+  }
+  /* =========================== */
+
+
+  nav button {
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+
+  @media (max-width: 992px) {
+    nav .full-container,
+    nav .nav-container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    nav .nav-header {
+      min-height: 60px;
+    }
+
+    nav .nav-header .brand {
+      margin: 0 auto 5px;
+      float: none;
+    }
+
+    nav .nav-header .toggle-bar {
+      font-size: 18px;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      color: white;
+    }
+
+    nav .menu li a {
+      padding: 10px 10px;
+      border-bottom: solid 1px #efefef;
+    }
+
+    nav .menu li:last-child a {
+      border-bottom: none;
+    }
+  }
+
+}
+.footer-text {
+  .padding-Y(top, 50);
+  .padding-Y(bottom, 10);
+  .margin-Y(16);
+  border-bottom: 1px solid white;
+
+  p {
+    .ff-open-sans();
+    .rem-size-mb(12);
+  }
+}
+.footer-copyright {
+  .ff-open-sans();
+  .rem-size(14);
+}
